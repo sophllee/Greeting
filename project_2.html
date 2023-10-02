@@ -1,0 +1,76 @@
+<! DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device, initial-scale=1">
+    <title> 인사 (The Greeting) </title>
+    <link rel="skrollr" type="text/css"href="../js.skrollr.min.js">
+
+    <style>
+      body{
+        background-image:url("..img/background.jpg");
+        background-size:cover;
+        background-color:white;
+      }
+
+      .skrollable{
+        position:fixed;
+        z-index:100;
+      }
+      .skrollr-mobile.skrollable{
+        position:absolute;
+      }
+      .skrollable.skrollable{
+        position:static;
+      }
+      .people{
+        max-height:80%;
+        max-width:80%;
+      }  
+      .background{
+        max-height:70%;
+        max-width:70%;
+      }
+      .face{
+        transform:scale(.4);
+        z-index:500;
+      }
+      p{
+        color:black;
+        position:fixed;
+      }
+      .smile{
+        transform:scale(.45);
+        z-index:600;
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <img src="../img/background.png" class="background" data-0="left:45%;top:7%" data-400="left:50%;top:4%">
+    </div>
+
+    <div>
+      <img src="../img/people.png" class="people" data-0="left:30%;top:10%" data-500="left:20%;top:5%">
+    </div>
+
+    <div>
+      <img src="../img/Smile.png" class="smile" data-0="left:42.5%;top:39.4%" data-600=left:20%;top:15%">
+    </div>
+
+    <div>
+      <img src="../img/magazineFace.png" class="face" data-0="left:38.5%;top:24%" data-600="left:20%;top:15%">
+    </div>
+
+    <div>
+      <p>Adjust window to 25560 x 1600</p>
+    </div>
+
+    <script type="text/javascript" src="../js/skrollr.min.js"></script>
+    <script type="text/javascript">
+      var s = skrollr.init();
+    </script> 
+    
+  </body>
+</html>
+
